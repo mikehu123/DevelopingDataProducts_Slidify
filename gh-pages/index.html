@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>An interactive quantile computing tool</title>
+  <meta charset="utf-8">
+  <meta name="description" content="An interactive quantile computing tool">
+  <meta name="author" content="Michael Hu">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>An interactive quantile computing tool</h1>
+    <h2>Compute normal distribution quantile from mu and p</h2>
+    <p>Michael Hu<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:lightyellow;">
+  <hgroup>
+    <h2>Problem Motivation</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Quantile computing is quite commonly needed in statistics, e.g.,
+
+<ul>
+<li>median, ith quantile</li>
+<li>hypothesis testing</li>
+<li>confidence intervals</li>
+<li>Q-Q plots</li>
+</ul></li>
+<li>An interactive web quantile tool can be handy </li>
+<li>Shiny makes creating the tool super easy</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:lightyellow;">
+  <hgroup>
+    <h2>Design</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Inputs
+
+<ul>
+<li>Use slide bars for mu and probability</li>
+<li>Standard deviation fixed to 1 for simplification</li>
+</ul></li>
+<li>Outputs
+
+<ul>
+<li>Plot probability density function</li>
+<li>Plot the vertical line to illustrate the quantile point</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:lightyellow;">
+  <hgroup>
+    <h2>Implementation</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Example plot when mu = 0 and p = 0.025</p>
+
+<p><img src="assets/fig/unnamed-chunk-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:lightyellow;">
+  <hgroup>
+    <h2>Future Enhancements</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Add input for stand deviation</li>
+<li>Add other distribution types</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Problem Motivation'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Design'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Implementation'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Future Enhancements'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
